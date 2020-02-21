@@ -68,24 +68,13 @@ public class InteractiveVoiceActivity extends Activity
                 String botName = null;
                 String botAlias = null;
                 String botRegion = null;
-                JSONObject lexConfig;
-                try {
-                    lexConfig = AWSMobileClient.getInstance().getConfiguration().optJsonObject("Lex");
-                    lexConfig = lexConfig.getJSONObject(lexConfig.keys().next());
-
-                    botName = lexConfig.getString("Name");
-                    botAlias = lexConfig.getString("Alias");
-                    botRegion = lexConfig.getString("Region");
-                } catch (JSONException e) {
-                    Log.e(TAG, "onResult: Failed to read configuration", e);
-                }
-
+                
                 InteractionConfig lexInteractionConfig = new InteractionConfig(
-                        botName,
-                        botAlias,
+                        "CoffeeCafeBot",
+                        "thoniwutrdev",
                         identityId);
                 voiceView.getViewAdapter().setInteractionConfig(lexInteractionConfig);
-                voiceView.getViewAdapter().setAwsRegion(botRegion);
+                voiceView.getViewAdapter().setAwsRegion("us-east-1");
             }
 
             @Override
