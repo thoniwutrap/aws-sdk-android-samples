@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@mipmap/response" />
-
-    <TextView
-        android:id="@+id/editTextUserDetailInput_rx"
+    <LinearLayout
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/text_bubble_rx"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@drawable/ic_bot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOT"
+            android:textColor="@color/grey_700"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:id="@+id/contentWithBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/out_message_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editTextUserDetailInput_rx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxWidth="240dp" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

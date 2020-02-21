@@ -158,27 +158,18 @@ public class TextActivity extends Activity {
                 String botName = null;
                 String botAlias = null;
                 String botRegion = null;
-                JSONObject lexConfig;
-                try {
-                    lexConfig = AWSMobileClient.getInstance().getConfiguration().optJsonObject("Lex");
-                    lexConfig = lexConfig.getJSONObject(lexConfig.keys().next());
 
-                    botName = lexConfig.getString("Name");
-                    botAlias = lexConfig.getString("Alias");
-                    botRegion = lexConfig.getString("Region");
-                } catch (JSONException e) {
-                    Log.e(TAG, "onResult: Failed to read configuration", e);
-                }
 
                 InteractionConfig lexInteractionConfig = new InteractionConfig(
-                        botName,
-                        botAlias,
+                        "CoffeeCafeBot",
+                        "thoniwutrdev",
                         identityId);
 
                 lexInteractionClient = new InteractionClient(getApplicationContext(),
                         AWSMobileClient.getInstance(),
-                        Regions.fromName(botRegion),
+                        Regions.fromName("us-east-1"),
                         lexInteractionConfig);
+
 
                 lexInteractionClient.setAudioPlaybackListener(audioPlaybackListener);
                 lexInteractionClient.setInteractionListener(interactionListener);

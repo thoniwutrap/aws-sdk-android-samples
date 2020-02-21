@@ -8,25 +8,42 @@
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/editTextUserDetailInput_tx"
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:id="@+id/contentWithBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/text_bubble_tx"
-        android:gravity="center_vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:textAlignment="gravity"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:layout_gravity="right"
+        android:background="@drawable/in_message_bg"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@mipmap/user" />
+        <TextView
+            android:id="@+id/editTextUserDetailInput_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxWidth="240dp" />
 
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@drawable/ic_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER"
+            android:textColor="@color/grey_700"
+            android:textSize="12dp"/>
+    </LinearLayout>
 
 </LinearLayout>

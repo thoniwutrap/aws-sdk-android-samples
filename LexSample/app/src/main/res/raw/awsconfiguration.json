@@ -1,21 +1,26 @@
 {
-  "Version": "1.0",
-  "CredentialsProvider": {
-    "CognitoIdentity": {
-      "Default": {
-        "PoolId": "REPLACED_BY_CLI",
-        "Region": "REPLACED_BY_CLI"
-      }
+    "UserAgent": "MobileHub/1.0",
+    "Version": "1.0",
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:aa2c7061-232c-4ebb-bdfb-b586ca5d46ce",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "IdentityManager": {
+        "Default": {}
+    },
+    "PinpointAnalytics": {
+        "Default": {
+            "AppId": "7e3b096db08f4ce8ade5fe0fad2fdf7f",
+            "Region": "us-east-1"
+        }
+    },
+    "PinpointTargeting": {
+        "Default": {
+            "Region": "us-east-1"
+        }
     }
-  },
-  "IdentityManager": {
-    "Default": {}
-  },
-  "Lex": {
-    "REPLACED_BY_CLI": {
-      "Name": "REPLACED_BY_CLI",
-      "Alias": "REPLACED_BY_CLI",
-      "Region": "REPLACED_BY_CLI"
-    }
-  }
 }

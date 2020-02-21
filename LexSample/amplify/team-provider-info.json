@@ -1,0 +1,20 @@
+{
+    "swstenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-coffeebotdemo-swstenv-120603-authRole",
+            "UnauthRoleArn": "arn:aws:iam::028027623685:role/amplify-coffeebotdemo-swstenv-120603-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::028027623685:role/amplify-coffeebotdemo-swstenv-120603-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-coffeebotdemo-swstenv-120603-deployment",
+            "UnauthRoleName": "amplify-coffeebotdemo-swstenv-120603-unauthRole",
+            "StackName": "amplify-coffeebotdemo-swstenv-120603",
+            "StackId": "arn:aws:cloudformation:us-east-1:028027623685:stack/amplify-coffeebotdemo-swstenv-120603/e03202c0-5467-11ea-afbc-120fbf0f0187",
+            "AmplifyAppId": "d198nhiq86ruli"
+        },
+        "categories": {
+            "auth": {
+                "cognito397cc223": {}
+            }
+        }
+    }
+}

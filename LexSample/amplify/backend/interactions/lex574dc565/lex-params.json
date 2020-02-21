@@ -1,0 +1,26 @@
+{
+    "resourceName": "lex574dc565",
+    "botName": "CaffeeBot",
+    "intents": [
+        {
+            "lambda": null,
+            "slots": [
+                {
+                    "name": "g",
+                    "type": "CoffeeType",
+                    "prompt": "s",
+                    "required": false,
+                    "customType": true
+                }
+            ],
+            "utterances": [
+                "fsdf"
+            ],
+            "intentName": "sfdsf",
+            "newSlotTypes": []
+        }
+    ],
+    "outputVoice": "Matthew",
+    "sessionTimeout": "5",
+    "coppa": false
+}
