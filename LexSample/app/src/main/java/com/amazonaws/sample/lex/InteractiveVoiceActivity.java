@@ -68,7 +68,7 @@ public class InteractiveVoiceActivity extends Activity
                 String botName = null;
                 String botAlias = null;
                 String botRegion = null;
-                
+
                 InteractionConfig lexInteractionConfig = new InteractionConfig(
                         "CoffeeCafeBot",
                         "thoniwutrdev",

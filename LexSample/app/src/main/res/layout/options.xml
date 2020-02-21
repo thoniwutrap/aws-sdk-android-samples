@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <Space
         android:layout_width="match_parent"
@@ -22,12 +23,14 @@
         android:layout_below="@+id/space_a1"
         android:layout_alignParentStart="true" />
 
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/activity_inter_group_separation"
         android:id="@+id/space_a2"
         android:layout_below="@+id/textView_options_main"
         android:layout_alignParentStart="true" />
+
 
     <Button
         android:text="Text widget"

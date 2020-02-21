@@ -10,6 +10,7 @@
         android:paddingLeft="@dimen/activity_intra_group_separation"
         android:background="@drawable/border_rounded_1"
         android:ems="10"
+        android:hint="message...."
         android:id="@+id/userInputEditText"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
